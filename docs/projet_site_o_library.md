@@ -83,4 +83,4 @@
 ## PAGE PANIER
 
 - Titre : Plus qu'un pas à franchir
-- Affiche la liste des produits sélectionné
+- Affiche la liste des ouvrages sélectionnés
