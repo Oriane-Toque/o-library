@@ -1,0 +1,16 @@
+AUTHOR: firstname, lastname, biography, createdAt, updatedAt
+belongs to, 0N AUTHOR, 11 BOOK
+is posted on, 11 REVIEW, 0N BOOK
+REVIEW: title, body, rating, createdAt, updatedAt
+write, 11 REVIEW, 0N USER
+
+write in, 0N LANGUAGE, 1N BOOK
+BOOK: title, image, summary, nbr_page, price, publishedAt, createdAt, updatedAt
+released in, 0N FORMAT, 1N BOOK
+FORMAT: name, createdAt, updatedAt
+USER: username, email, password, createdAt, updatedAt
+
+LANGUAGE: name, createdAt, updatedAt
+have, 0N GENRE, 1N BOOK
+GENRE: name, createdAt, updatedAt
+::

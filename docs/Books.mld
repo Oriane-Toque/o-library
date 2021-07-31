@@ -1,0 +1,28 @@
+%%mocodo
+:
+AUTHOR: firstname, lastname, biography, createdAt, updatedAt
+:::::
+REVIEW: title, body, rating, createdAt, updatedAt, #username->USER->username, #title.1->BOOK->title
+:::
+
+
+:
+write in: #name->LANGUAGE->name, _#title->BOOK->title
+:
+BOOK: title, image, summary, nbr_page, price, publishedAt, createdAt, updatedAt, #firstname->AUTHOR->firstname
+:
+released in: #name->FORMAT->name, _#title->BOOK->title
+:
+FORMAT: name, createdAt, updatedAt
+:
+USER: username, email, password, createdAt, updatedAt
+:
+
+
+:
+LANGUAGE: name, createdAt, updatedAt
+:
+have: #name->GENRE->name, _#title->BOOK->title
+:
+GENRE: name, createdAt, updatedAt
+:::::
