@@ -27,7 +27,7 @@
 - Navigation principale (Home, Books, Genres, Langues, Auteurs, Connexion/Deconnexion, Panier) = sticky nav
 - Navigation pied de page (3 colonnes)
   - Réseaux sociaux : facebook, twitter, linkedin (sous forme d'icones), mail + copyright (en bas centré)
-
+  - Contact
   - Maintenance : accès au back (pas prioritaire), juste lien vers page en cours de travaux.
   - SAV : (pas prioritaire), juste lien vers page en cours de travaux.
 - Body :
