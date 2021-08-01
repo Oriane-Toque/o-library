@@ -8,11 +8,15 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    font-weight: 400;
 }
 
 .main-nav {
     position: relative;
     height: 80px;
+    -webkit-box-shadow: -1px 9px 12px 1px rgba(0,0,0,0.67); 
+    box-shadow: -1px 9px 12px 1px rgba(0,0,0,0.67);
+    margin-bottom: 1rem;
 }
 
 .main-nav__mobile {
@@ -92,6 +96,10 @@ body {
     display: flex;
     grid-column: 1 / span 3;
     grid-row: 3;
+}
+
+.main-nav__menu-connect .main-nav__menu-item {
+    margin-right: 1rem;
 }
 
 .main-nav__menu-item-link,
@@ -201,8 +209,10 @@ body {
 
 
 @media screen and (min-width: 650px) {
+    
     .main-nav__menu {
         grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
     }
 
     .main-nav__menu-connect {
@@ -248,15 +258,46 @@ body {
         background-color: #01579b;
         justify-content: space-between;
         align-items: center;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
+        padding: 0;
+    }
+
+    .main-nav__menu-item {
+        height: 100%;
+        padding: 0rem 1rem;
+    }
+
+    .main-nav__menu-item .main-nav__menu-item-link {
+        display: block;
+        margin-top: 1.7rem;
+    }
+
+    .main-nav__menu-connect .main-nav__menu-item {
+        padding: 0 1rem 0 0;
+        margin: 0;
     }
 
     .main-nav__menu-connect {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        transform: translate(8%, 13%);
-        font-size: 1rem;
+        text-align: right;
+        align-items: center;
+    }
+
+    .main-nav__menu-connect .main-nav__menu-item:last-child {
+        height: 132%;
+        padding: 0 1rem;
+    }
+
+    .main-nav__menu-cart {
+        padding-top: 1.5rem;
+    }
+
+    .main-nav__menu-item .main-nav__menu-item-button {
+        font-size: 1.2rem;
         font-weight: 700;
+        border-radius: 0.5rem;
+        padding: 1rem 1.5rem;
+        margin: 0;
     }
 
     .main-nav__menu-item:nth-child(2) {
@@ -276,4 +317,14 @@ body {
     .main-nav__logo-link {
         font-size: 2rem;
     }
+
+    .main-nav__menu > li:hover,
+    .main-nav__menu-connect > li:last-child:hover {
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    .main-nav__menu > li.--active {
+        border-bottom: #fff solid 5px;
+    }
+
 }
