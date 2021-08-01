@@ -40,7 +40,7 @@ body {
     line-height: 1.5rem;
     background-color: #eaeaea;
     font-size: 1rem;
-    top: -300px;
+    top: -125px;
     width: 100%;
     z-index: 0;
     transition: .5s ease-in-out;
@@ -209,7 +209,7 @@ body {
 
 
 @media screen and (min-width: 650px) {
-    
+
     .main-nav__menu {
         grid-template-columns: repeat(4, 1fr);
         gap: 1rem;
@@ -319,12 +319,30 @@ body {
     }
 
     .main-nav__menu > li:hover,
-    .main-nav__menu-connect > li:last-child:hover {
+    .main-nav__menu-connect > li:last-child:hover,
+    .main-nav__menu-connect > li.--active {
         background-color: rgba(0, 0, 0, 0.3);
     }
 
     .main-nav__menu > li.--active {
         border-bottom: #fff solid 5px;
+    }
+
+    /* SOUS-MENU DESKTOP */
+    .main-nav__sub-menu {
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background-color: #eaeaea;
+        margin: 0;
+        padding: 2rem 3rem!important;
+        line-height: 4rem;
+        columns: 4;
+    }
+
+    .main-nav__sub-menu-item-link {
+        color: #01579b!important;
     }
 
 }
