@@ -9,8 +9,10 @@ const navbar = {
 		// écouteur d'évènement au click sur lien genres et langues
 		const buttonGenres = document.getElementById('sub-menu__genres');
 		const buttonLangues = document.getElementById('sub-menu__langues');
+		const buttonAuthors = document.getElementById('sub-menu__authors');
 		buttonGenres.addEventListener('click', navbar.handleSubMenu);
 		buttonLangues.addEventListener('click', navbar.handleSubMenu);
+		buttonAuthors.addEventListener('click', navbar.handleSubMenu);
 	},
 
 	handleClickButtonBurger: function() {
@@ -41,6 +43,11 @@ const navbar = {
 		// récupération du parent de l'élément courant
 		const subnav = currentButton.closest('.main-nav__menu-item');
 		// console.log(subnav);
+		// récupération de l'enfant du button
+		const arrowLink = currentButton.querySelector('.fas');
+		console.log(arrowLink);
+		arrowLink.classList.toggle('--down');
+
 		// affiche/masque le sous menu correspondant à l'élément
 		subnav.classList.toggle('main-nav__menu-item--active');
 	}
