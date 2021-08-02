@@ -59,10 +59,6 @@ body {
     margin-right: 0.5rem;
 }
 
-.main-nav__menu-item--active > .main-nav__sub-menu {
-    display: block;
-}
-
 .main-nav__menu--active {
     top: 78px;
 }
@@ -118,10 +114,6 @@ body {
     transition: .2s linear;
 }
 
-.main-nav__menu-item-link i.--down {
-    transform: rotateZ(90deg);
-}
-
 .main-nav__logo-link {
     font-size: 1.5rem;
     text-decoration: none;
@@ -156,6 +148,14 @@ body {
 
 .main-nav__menu-cart i {
     font-size: 1.8rem;
+}
+
+.main-nav__menu-item:hover .main-nav__sub-menu {
+    display: block;
+}
+
+.main-nav__menu-item:hover .main-nav__menu-item-link i {
+    transform: rotateZ(90deg);
 }
 
 /*? BURGER ?*/
